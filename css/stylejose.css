@@ -1,0 +1,79 @@
+article{
+  flex-wrap: wrap;
+}
+
+*{
+  box-sizing: border-box ;
+  padding:0;
+  margin: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.image{
+  width: 20%;
+}
+
+/*estilos para las tarjetas*/
+*{
+  box-sizing: border-box ;
+  padding:0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  background: white ;
+  width: 220px;
+  height: 500px;
+  margin: 10px;
+}
+.card-image{
+  height: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.card-1{
+   background: image 0;; 
+}
+.card-2{
+  background-image: 0;
+}
+.card-3{
+  background-image: 0;
+}
+.card h2{
+  padding: 08px;
+  text-align: center;
+  color: white;
+  display: block;
+}
+.card a{
+  padding: 08px;
+  text-align: center;
+  color: black;
+  display: block;
+  margin: 1px;
+}
+.card p{
+  text-align: center;
+  color: #9c1c1c;
+  padding: 02px;
+  display: block;
+  text-decoration: none;
+}
+.card:hover{
+  background-color:  #C33764;
+  color: red;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 1s ease ;
+}
+
+  
