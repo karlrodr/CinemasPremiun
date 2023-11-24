@@ -2,7 +2,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 950px;
+    max-width: 950px;
     height: 430px;
   }
 section img {
@@ -27,11 +27,12 @@ section img:hover {
 
  /*salas cine */
 #food {
-    padding: 3 rem 0 3 rem 0;
+    padding: 3 rem,
 }
 
 .food-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -51,7 +52,7 @@ section img:hover {
 
 .img-content {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -88,7 +89,7 @@ section img:hover {
     opacity: 0;
     z-index: 1;
 
-    transform: scaleY(0);
+    transform: scaleY(0);       
     transform-origin: 100% 100%;
     transition: all 0.3s ease-in-out;
 }
@@ -105,8 +106,8 @@ section img:hover {
 
  /*Contacto */
 
- #contact {
-    padding: 5rem 0;
+#contact {
+    padding: 5rem 0;    
 
 }
 
@@ -120,7 +121,8 @@ section img:hover {
     margin: auto;
 }
 
-.form-container input {
+.form-container input,
+.form-container textarea {
     display: block;
     width: 100%;
     border: none;
@@ -134,29 +136,16 @@ section img:hover {
 }
 
 .form-container textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #ddd;
-    color: #444;
-    outline: none;
-    padding: 1rem 0;
     resize: none;
 }
 
-.card-title {
-    color: #fff;
-    font-family: sans-serif;
-    text-decoration: underline;
-}
-.card-text  {
-    color: #fff;
-    font-family: sans-serif;
-}
+.card-title,
+.card-text,
 p {
     color: #fff;
-    text-align: auto; /* Para alinear el texto horizontalmente al centro */
+    text-align: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+  
