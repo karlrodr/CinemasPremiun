@@ -140,12 +140,16 @@ section img:hover {
 }
 
 .card-title,
-.card-text,
+.card-text, {
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+ 
 p {
     color: #fff;
-    text-align: auto;
+    text-align: auto; /* Para alinear el texto horizontalmente al centro */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-  

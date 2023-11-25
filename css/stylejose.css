@@ -68,12 +68,6 @@ article{
   display: block;
   text-decoration: none;
 }
-.card:hover{
-  background-color:  #C33764;
-  color: red;
-  cursor: pointer;
-  transform: scale(1);
-  transition: all 1s ease ;
-}
+
 
   

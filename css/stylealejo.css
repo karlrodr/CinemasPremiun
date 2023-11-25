@@ -1,36 +1,70 @@
+article{
+  flex-wrap: wrap;
+}
 
-.product-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+*{
+  box-sizing: border-box ;
+  padding:0;
+  margin: 0;
 }
-.product-1 {
-  background-color: rgb(28, 12, 71);
-}
-.product-txt {
-  padding: 60px 40px;
-}
-h3 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.price  {
+.container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;  
+  justify-content: center;
 }
-.price p {
-  font-size: 13px;
-  color: white;
+
+.image{
+  width: 20%;
 }
-.btn-2 {
-  display: inline-block;
-  padding: 8px 25px;
-  background-color: fuchsia;
-  margin-right: 25px;
-  border-radius: 20px;
-  border: 2xp solid;
-  font-size: 17px;
-  color: white;
+
+/*estilos para las tarjetas*/
+*{
+  box-sizing: border-box ;
+  padding:0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  background: rgb(255, 255, 255) ;
+  width: 220px;
+  height: 500px;
+  margin: 10px;z
+}
+.card-image{
+  height: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.card-1{
+   background: image 0;; 
+}
+.card-2{
+  background-image: 0;
+}
+.card-3{
+  background-image: 0;
+}
+.card h2{
+  padding: 08px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+.card a{
+  padding: 08px;
+  text-align: center;
+  color: black;
+  display: block;
+  margin: 1px;
+}
+.card p{
+  text-align: center;
+  color: #9c1c1c;
+  padding: 02px;
+  display: block;
+  text-decoration: none;
 }
