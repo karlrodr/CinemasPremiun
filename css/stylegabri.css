@@ -1,6 +1,6 @@
 .container {
   max-width: 1300px;
-  width: 130%;
+  width: 100%; /* Cambié "130%" a "100%" para que no se extienda más allá del viewport */
   margin: auto;
 }
 
@@ -16,46 +16,49 @@
   font-weight: small;
 }
 
-/* ..........////Food category///........... */
+/* Food category */
 .btn-2 {
   display: inline-block;
   padding: 8px 25px;
   background-color: rgb(255, 0, 255);
-  margin-right: 25px;
+  margin-bottom: 25px; /* Cambié "margin-right" a "margin-bottom" para separar verticalmente */
   border-radius: 20px;
-  border: 2xp solid;
+  border: 2px solid;
   font-size: 17px;
   color: white;
 }
+
 #food {
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 0 5rem 0; /* Ajusté el padding para que sea consistente */
 }
 
 .food-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Para ajustar en pantallas pequeñas */
+  justify-content: space-around; /* Para centrar los elementos */
 }
 
 .food-container img {
-  display: block;
-  width: 100%;
-  margin: auto;
-  max-height: 300px;
+  width: 100%; /* Hacer que las imágenes ocupen el 100% del contenedor */
+  max-width: 300px; /* Establecer un ancho máximo para evitar que las imágenes sean demasiado grandes */
+  height: auto; /* Hacer que la altura se ajuste automáticamente */
+  margin-bottom: 15px; /* Espaciado inferior entre las imágenes */
   object-fit: cover;
   object-position: center;
 }
 
-
 .food-menu-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0px 30px 0px;
+  justify-content: space-around;
+  padding: 30px 0; /* Ajusté el padding para que sea consistente */
 }
 
 .food-menu-container img {
-  display: block;
-  width: 250px;
-  height: 250px;
+  width: 100%; /* Hacer que las imágenes ocupen el 100% del contenedor */
+  max-width: 250px; /* Establecer un ancho máximo para evitar que las imágenes sean demasiado grandes */
+  height: auto; /* Hacer que la altura se ajuste automáticamente */
+  margin-bottom: 15px; /* Espaciado inferior entre las imágenes */
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -63,13 +66,14 @@
 
 .food-menu-item {
   display: flex;
-  flex: 1 1 600px;
-  justify-content: space-evenly;
+  flex-direction: column; /* Cambié "space-evenly" a "column" para apilar los elementos */
+  align-items: center; /* Centrar los elementos */
   margin-bottom: 3rem;
 }
 
 .food-description {
-  margin: auto 1.5rem;
+  text-align: center; /* Alineación central del texto */
+  margin: 1.5rem;
 }
 
 .food-description p {

@@ -2,11 +2,11 @@
 
  #contact {
     padding: 5rem 0;
-
 }
 
 .contact-container {
     display: flex;
+    flex-wrap: wrap; /* Para permitir el ajuste en pantallas pequeñas */
 }
 
 .form-container {
@@ -15,7 +15,8 @@
     margin: auto;
 }
 
-.form-container input {
+.form-container input,
+.form-container textarea {
     display: block;
     width: 100%;
     border: none;
@@ -29,45 +30,36 @@
 }
 
 .form-container textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #ddd;
-    color: #444;
-    outline: none;
-    padding: 1rem 0;
     resize: none;
 }
 
-.card-title {
+.card-title,
+.card-text {
     color: #fff;
     font-family: sans-serif;
-    text-decoration: underline;
+    text-align: center; /* Alineación central para el título y el texto */
 }
-.card-text  {
-    color: #fff;
-    font-family: sans-serif;
-}
+
 #map {
     outline: 2px solid blue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    width: 500px;
-    height: 500px;
+    margin: 5em auto; /* Centrar el mapa */
+    width: 100%; /* Hacer que el mapa ocupe el 100% del ancho */
+    max-width: 400px; /* Establecer un ancho máximo para evitar que sea demasiado grande */
+    height: 400px;
 }
+
 #map iframe {
     width: 100%;
     height: 100%;
 }
+
 .btn-2 {
     display: inline-block;
     padding: 8px 25px;
     background-color: rgb(255, 0, 255);
-    margin-right: 25px;
+    margin: 0 auto; /* Centrar el botón */
     border-radius: 20px;
-    border: 2xp solid;
+    border: 2px solid;
     font-size: 17px;
     color: white;
-  }
+}
