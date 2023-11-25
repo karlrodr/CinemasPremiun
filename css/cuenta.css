@@ -161,11 +161,28 @@ main{
         position: relative;
     }
 }
-.navbar-nav .nav-link:hover {
-  transform: scale(1.4);
-  transition: transform 0.3s;
-}
-
+.navbar {
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold; /* Aplica negritas al texto */
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+    font-family: sans-serif;
+    word-spacing: 15px; /* Ajusta el valor según tus preferencias */
+  }
+  
+  .navbar-brand img {
+    pointer-events: none;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s;
+  }
 .whatsapp-float {
   position: fixed;
   bottom: 20px;

@@ -1,6 +1,6 @@
  /*Contacto */
 
- #contact {
+#contact {
     padding: 5rem 0;
 }
 
@@ -11,7 +11,7 @@
 
 .form-container {
     padding: 1rem;
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 
@@ -43,7 +43,7 @@
 #map {
     outline: 2px solid blue;
     margin: 5em auto; /* Centrar el mapa */
-    width: 100%; /* Hacer que el mapa ocupe el 100% del ancho */
+    width: 80%; /* Hacer que el mapa ocupe el 100% del ancho */
     max-width: 400px; /* Establecer un ancho máximo para evitar que sea demasiado grande */
     height: 400px;
 }
