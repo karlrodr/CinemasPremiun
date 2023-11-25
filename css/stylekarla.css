@@ -51,8 +51,8 @@ section img:hover {
 
 .img-content {
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 2;
