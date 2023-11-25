@@ -21,13 +21,13 @@ section img:hover {
 }
 .responsive-img {
     display: block;  
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;  
  }
 
  /*salas cine */
- #food {
-    padding: 3rem;
+#food {
+    padding: 3rem 0;
 }
 
 .food-container {
@@ -35,37 +35,31 @@ section img:hover {
     justify-content: space-between;
 }
 
-.food-container .img-container {
-    flex: 0 0 calc(33.333% - 2rem); /* Tres imágenes por fila, con un pequeño espacio entre ellas */
-    margin-bottom: 2rem; /* Espacio entre las filas de imágenes */
-}
-
 .food-container img {
     display: block;
     width: 100%;
+    margin: auto;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
 }
 
 .img-container {
+    margin: 0 1 rem;
     position: relative;
 }
 
 .img-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 40%;
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 2;
     text-align: center;
-    transition: all 0.3s ease-in-out 0.1s;
+    transition: opacity 0.3s ease-in-out 0.1s, top 0.3s ease-in-out 0.1s;
 }
 
-.food-container:hover .img-content {
-    opacity: 1;
-}
 .img-content h3 {
     color: #fff;
     font-size: 1.5 rem;
@@ -96,7 +90,7 @@ section img:hover {
 
     transform: scaleY(0);       
     transform-origin: 100% 100%;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .img-container:hover::after {
@@ -153,7 +147,6 @@ section img:hover {
  
 p {
     color: #fff;
-    text-align: auto; /* Para alinear el texto horizontalmente al centro */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
