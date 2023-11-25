@@ -27,7 +27,7 @@ section img:hover {
 
  /*salas cine */
  #food {
-    padding: 3rem; /* Corregido: no hay coma en "3rem" */
+    padding: 3rem;
 }
 
 .food-container {
