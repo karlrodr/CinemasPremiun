@@ -2,7 +2,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    max-width: 950px;
+    max-width: 768px;       
     height: 430px;
   }
 section img {
@@ -26,27 +26,29 @@ section img:hover {
  }
 
  /*salas cine */
-#food {
-    padding: 3 rem,
+ #food {
+    padding: 3rem; /* Corregido: no hay coma en "3rem" */
 }
 
 .food-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.food-container .img-container {
+    flex: 0 0 calc(33.333% - 2rem); /* Tres imágenes por fila, con un pequeño espacio entre ellas */
+    margin-bottom: 2rem; /* Espacio entre las filas de imágenes */
 }
 
 .food-container img {
     display: block;
     width: 100%;
-    margin: auto;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
 }
 
 .img-container {
-    margin: 0 1 rem;
     position: relative;
 }
 
@@ -61,6 +63,9 @@ section img:hover {
     transition: all 0.3s ease-in-out 0.1s;
 }
 
+.food-container:hover .img-content {
+    opacity: 1;
+}
 .img-content h3 {
     color: #fff;
     font-size: 1.5 rem;
